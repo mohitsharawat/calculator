@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html class="dark-mode">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function clearscreen() {
+        var clear = document.getElementById("display").reset();
+        return clear;
+      }
+
+      function backspace() {
+        var value = document.getElementById("displayResult").value;
+        document.getElementById("displayResult").value = value.substr(
+          0,
+          value.length - 1
+        );
+        return value;
+      }
+
+      function calculator(result) {
+        var display = document.getElementById("displayResult"),
+          value;
+        display.value = display.value + result;
+      }
+
+      function darklight() {
+        var btndark = document.getElementById("darkmode");
+        if (btndark.checked === true) {
+          document.getElementById("kala").style.filter = "invert(100%)";
+          document.getElementsByClassName("sign").style.filter = "invert(0%)";
+          document.getElementsByid("displayResult").style.backgroundColor =
+            "gray";
+          document.getElementsByClassName("daynightbtn").innerText = "Night";
+        } else {
+          document.getElementById("kala").style.filter = "invert(0%)";
+          document.getElementsByTagName("img").style.filter = "invert(0%)";
+          document.getElementsByid("displayResult").style.filter = "invert(0%)";
+          document.getElementsByClassName("daynightbtn").innerText = "Day";
+        }
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body id="kala">
+    <!-- Rounded switch -->
+    <button class="daynightbtn">
+      <input
+        type="checkbox"
+        id="darkmode"
+        class="darkmode"
+        onclick="darklight()"
+      />Dark Mode
+    </button>
+    <div id="screen">
+      <form name="form" id="calculatorwebsite">
+        <div id="display">
+          <input
+            id="displayResult"
+            class="darkdisplay"
+            type="text"
+            placeholder="0"
+            name="displayResult"
+          />
+        </div>
+        <div id="buttonarea">
+          <div class="buttons">
+            <button
+              id="clearbtn"
+              type="reset"
+              onclick="clearscreen()"
+              class="sign darksign"
+            >
+              <img src="clear.png" />
+            </button>
+
+            <button onclick="backspace()" type="button" class="sign darksign">
+              <img src="backspace.png" />
+            </button>
+
+            <button
+              name="bdiv"
+              value="/"
+              onclick="calculator(bdiv.value)"
+              type="button"
+              class="sign darksign"
+            >
+              <img src="divide.png" />
+            </button>
+          </div>
+
+          <div class="buttons">
+            <button
+              name="b7"
+              value="7"
+              type="button"
+              class="darkbutton"
+              onclick="calculator(b7.value)"
+            >
+              7
+            </button>
+
+            <button
+              name="b8"
+              value="8"
+              type="button"
+              class="darkbutton"
+              onclick="calculator(b8.value)"
+            >
+              8
+            </button>
+
+            <button
+              name="b9"
+              value="9"
+              type="button"
+              class="darkbutton"
+              onclick="calculator(b9.value)"
+            >
+              9
+            </button>
+
+            <button
+              name="bmulti"
+              value="*"
+              onclick="calculator(bmulti.value)"
+              type="button"
+              class="sign darksign"
+            >
+              <img src="multiply.png" />
+            </button>
+          </div>
+
+          <div class="buttons">
+            <button
+              name="b4"
+              value="4"
+              type="button"
+              class="darkbutton"
+              onclick="calculator(b4.value)"
+            >
+              4
+            </button>
+
+            <button
+              name="b5"
+              value="5"
+              type="button"
+              class="darkbutton"
+              onclick="calculator(b5.value)"
+            >
+              5
+            </button>
+
+            <button
+              name="b6"
+              value="6"
+              type="button"
+              class="darkbutton"
+              onclick="calculator(b6.value)"
+            >
+              6
+            </button>
+
+            <button
+              name="bsub"
+              value="-"
+              onclick="calculator(bsub.value)"
+              type="button"
+              class="sign darksign"
+            >
+              <img src="minus.png" />
+            </button>
+          </div>
+
+          <div class="buttons">
+            <button
+              name="b1"
+              value="1"
+              type="button"
+              class="darkbutton"
+              onclick="calculator(b1.value)"
+            >
+              1
+            </button>
+
+            <button
+              name="b2"
+              value="2"
+              type="button"
+              class="darkbutton"
+              onclick="calculator(b2.value)"
+            >
+              2
+            </button>
+
+            <button
+              name="b3"
+              value="3"
+              type="button"
+              class="darkbutton"
+              onclick="calculator(b3.value)"
+            >
+              3
+            </button>
+
+            <button
+              name="badd"
+              value="+"
+              onclick="calculator(badd.value)"
+              type="button"
+              class="sign darksign"
+            >
+              <img src="plus.png" />
+            </button>
+          </div>
+
+          <div class="buttons">
+            <button
+              x
+              name="b00"
+              value="00"
+              type="button"
+              class="darkbutton"
+              onclick="calculator(b00.value)"
+            >
+              00
+            </button>
+
+            <button
+              name="b0"
+              value="0"
+              type="button"
+              class="darkbutton"
+              onclick="calculator(b0.value)"
+            >
+              0
+            </button>
+
+            <button
+              name="bdec"
+              value="."
+              type="button"
+              class="darkbutton"
+              onclick="calculator(bdec.value)"
+            >
+              .
+            </button>
+
+            <button
+              name="bequal"
+              value="="
+              onClick="displayResult.value=eval(displayResult.value)"
+              type="button"
+              class="sign darksign"
+            >
+              <img src="equal.png" />
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

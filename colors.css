@@ -79,10 +79,10 @@
   .dark div button {
     border: 3.5px solid rgb(255, 5, 159);
     background-color: whitesmoke;
+    transition: background-color 1s;
   }
   
   .dark div button:hover {
-    border-color: black;
     background-color: rgb(5, 151, 255);
   }
   

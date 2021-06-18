@@ -9,14 +9,6 @@
   </head>
   <body id="container" class="light">
     <!-- Rounded switch -->
-    <div class="light-dark-btn">
-      <input type="checkbox" class="checkbox" id="dark-check"onclick="dark_light()"/>
-      <label class="label" for="dark-check">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-          <div class="ball"></div>
-      </label>
-  </div>
 
     <div id="screen">
       <form name="form" id="calculatorwebsite">
@@ -30,12 +22,22 @@
           />
         </div>
         <div id="buttonarea">
+
+          
           <div class="buttons">
+            <div class="light-dark-btn buttons">
+              <input type="checkbox" class="checkbox" id="dark-check"onclick="dark_light()"/>
+              <label class="label" for="dark-check">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                  <div class="ball"></div>
+              </label>
+          </div>
             <button
               id="clearbtn"
               type="reset"
               onclick="clearscreen()"
-              class="sign darksign"
+              class="sign darksign eraser"
             >
               <i class="fas fa-eraser"></i>
             </button>
@@ -183,7 +185,6 @@
 
           <div class="buttons">
             <button
-              x
               name="b00"
               value="00"
               type="button"

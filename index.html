@@ -4,18 +4,20 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="colors.css" />
     <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Calculator</title>
   </head>
-  <body id="kala">
+  <body id="container">
     <!-- Rounded switch -->
-    <button class="daynightbtn">
-      <input
-        type="checkbox"
-        id="darkmode"
-        class="darkmode"
-        onclick="darklight()"
-      />Dark Mode
-    </button>
+    <div class="light-dark-btn">
+      <input type="checkbox" class="checkbox" id="dark-check"onclick="dark_light()"/>
+      <label class="label" for="dark-check">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+      </label>
+  </div>
+
     <div id="screen">
       <form name="form" id="calculatorwebsite">
         <div id="display">

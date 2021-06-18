@@ -2,43 +2,8 @@
 <html class="dark-mode">
   <head>
     <link rel="stylesheet" href="style.css" />
-    <script>
-      function clearscreen() {
-        var clear = document.getElementById("display").reset();
-        return clear;
-      }
-
-      function backspace() {
-        var value = document.getElementById("displayResult").value;
-        document.getElementById("displayResult").value = value.substr(
-          0,
-          value.length - 1
-        );
-        return value;
-      }
-
-      function calculator(result) {
-        var display = document.getElementById("displayResult"),
-          value;
-        display.value = display.value + result;
-      }
-
-      function darklight() {
-        var btndark = document.getElementById("darkmode");
-        if (btndark.checked === true) {
-          document.getElementById("kala").style.filter = "invert(100%)";
-          document.getElementsByClassName("sign").style.filter = "invert(0%)";
-          document.getElementsByid("displayResult").style.backgroundColor =
-            "gray";
-          document.getElementsByClassName("daynightbtn").innerText = "Night";
-        } else {
-          document.getElementById("kala").style.filter = "invert(0%)";
-          document.getElementsByTagName("img").style.filter = "invert(0%)";
-          document.getElementsByid("displayResult").style.filter = "invert(0%)";
-          document.getElementsByClassName("daynightbtn").innerText = "Day";
-        }
-      }
-    </script>
+    <link rel="stylesheet" href="colors.css" />
+    <script src="./script.js"></script>
     <title>Calculator</title>
   </head>
   <body id="kala">

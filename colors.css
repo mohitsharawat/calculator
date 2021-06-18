@@ -1,0 +1,197 @@
+/*light mode */
+.light {
+    background-color: gray;
+  }
+  
+  .light #calculatorwebsite {
+    display: grid;
+    grid-template-columns: 500px;
+    width: 600px;
+    border: 8px solid black;
+    border-radius: 50px;
+    background-color: white;
+    margin-left: 30%;
+  }
+  
+  .light #display {
+    padding-right: 100px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+  
+  .light #display input {
+    width: 550px;
+    height: 130px;
+    border-radius: 30px;
+    background-color: black;
+    font-size: 70px;
+    margin-left: 16px;
+    text-align: right;
+    color: white;
+  }
+  
+  .light .buttons {
+    display: grid;
+    grid-template-columns: 125px 125px 125px 125px;
+    grid-template-rows: 90px;
+    grid-gap: 8px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+  }
+  
+  .light button {
+    font-size: 32px;
+    border-radius: 20px;
+  }
+  
+  .light button:hover {
+    background-color: rgb(5, 151, 255);
+    font-size: 40px;
+    border-radius: 25px;
+  }
+  
+  .light #clearbtn {
+    grid-column: 1/3;
+  }
+  
+  .light #clearbtn img {
+    width: 45px;
+  }
+  
+  .light #clearbtn:hover img {
+    width: 50px;
+  }
+  .light img {
+    width: 40px;
+  }
+  
+  .light button:hover img {
+    width: 45px;
+  }
+  
+  .light div button {
+    border: 3.5px solid rgb(255, 5, 159);
+    background-color: whitesmoke;
+  }
+  
+  .light div button:hover {
+    border-color: black;
+    background-color: rgb(5, 151, 255);
+  }
+  
+  .light .sign {
+    background-color: rgb(5, 151, 255);
+    border-color: gray;
+    border-width: 3px;
+  }
+  .light .sign:hover {
+    background-color: rgb(255, 5, 159);
+    border-color: rgb(5, 151, 255);
+  }
+  
+  .light .darkmode {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /*light mode */
+  
+  /*dark mode */
+  
+  .dark {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .dark #calculatorwebsite {
+    display: grid;
+    grid-template-columns: 500px;
+    width: 600px;
+    border: 8px solid black;
+    border-radius: 50px;
+    background-color: white;
+    margin-left: 30%;
+  }
+  
+  .dark #display {
+    padding-right: 100px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+  
+  .dark #display input {
+    width: 550px;
+    height: 130px;
+    border-radius: 30px;
+    background-color: black;
+    font-size: 70px;
+    margin-left: 16px;
+    text-align: right;
+    color: white;
+  }
+  
+  .dark .buttons {
+    display: grid;
+    grid-template-columns: 125px 125px 125px 125px;
+    grid-template-rows: 90px;
+    grid-gap: 8px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+  }
+  
+  .dark button {
+    font-size: 32px;
+    border-radius: 20px;
+  }
+  
+  .dark button:hover {
+    background-color: rgb(5, 151, 255);
+    font-size: 40px;
+    border-radius: 25px;
+  }
+  
+  .dark #clearbtn {
+    grid-column: 1/3;
+  }
+  
+  .dark #clearbtn img {
+    width: 45px;
+  }
+  
+  .dark #clearbtn:hover img {
+    width: 50px;
+  }
+  .dark img {
+    width: 40px;
+  }
+  
+  .dark button:hover img {
+    width: 45px;
+  }
+  
+  .dark div button {
+    border: 3.5px solid rgb(255, 5, 159);
+    background-color: whitesmoke;
+  }
+  
+  .dark div button:hover {
+    border-color: black;
+    background-color: rgb(5, 151, 255);
+  }
+  
+  .dark .sign {
+    background-color: rgb(5, 151, 255);
+    border-color: gray;
+    border-width: 3px;
+  }
+  .dark .sign:hover {
+    background-color: rgb(255, 5, 159);
+    border-color: rgb(5, 151, 255);
+  }
+  
+  .dark .darkmode {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /*dark mode */
+  

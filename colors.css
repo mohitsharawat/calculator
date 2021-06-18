@@ -20,6 +20,7 @@
   .light div button {
     border: 3.5px solid rgb(255, 5, 159);
     background-color: whitesmoke;
+    transition: background-color 1s;
   }
   
   .light div button:hover {
